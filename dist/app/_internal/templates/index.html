@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora - Veículos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0">🚗 Veículos Cadastrados</h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCadastroVeiculo">
+            ➕ Cadastrar Veículo
+        </button>
+    </div>
+
+    <div id="listaVeiculos" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-1">
+        <!-- Cards via JS -->
+    </div>
+</div>
+
+<!-- Modal Cadastro -->
+<div class="modal fade" id="modalCadastroVeiculo" tabindex="-1" aria-labelledby="modalCadastroVeiculoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCadastroVeiculoLabel">Cadastrar Veículo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formCadastroVeiculo" class="row g-3">
+          <div class="col-md-4">
+            <label for="marca" class="form-label">Marca</label>
+            <select class="form-select" id="marca" required></select>
+          </div>
+          <div class="col-md-4">
+            <label for="modelo" class="form-label">Modelo</label>
+            <select class="form-select" id="modelo" required></select>
+          </div>
+          <div class="col-md-4">
+            <label for="ano" class="form-label">Ano</label>
+            <select class="form-select" id="ano" required></select>
+          </div>
+          <div class="col-md-4">
+            <label for="placa" class="form-label">Placa</label>
+            <input type="text" class="form-control" id="placa" required>
+          </div>
+          <div class="col-md-4">
+            <label for="kmAtual" class="form-label">KM Atual</label>
+            <input type="number" class="form-control" id="kmAtual" required>
+          </div>
+
+          <!-- Troca Óleo -->
+          <div class="col-12 mt-4">
+            <h5>Troca Óleo</h5>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="oleoKm" placeholder="Intervalo (km)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="oleoUltimaKm" placeholder="Última troca (km)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="oleoDias" placeholder="Intervalo (dias)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="oleoUltimaDias" placeholder="Última troca (dias)" required>
+          </div>
+
+          <!-- Troca Filtro de Ar -->
+          <div class="col-12 mt-4">
+            <h5>Troca Filtro de Ar</h5>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroArKm" placeholder="Intervalo (km)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroArUltimaKm" placeholder="Última troca (km)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroArDias" placeholder="Intervalo (dias)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroArUltimaDias" placeholder="Última troca (dias)" required>
+          </div>
+
+          <!-- Troca Filtro de Combustível -->
+          <div class="col-12 mt-4">
+            <h5>Troca Filtro de Combustível</h5>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroCombustivelKm" placeholder="Intervalo (km)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroCombustivelUltimaKm" placeholder="Última troca (km)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroCombustivelDias" placeholder="Intervalo (dias)" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" class="form-control" id="filtroCombustivelUltimaDias" placeholder="Última troca (dias)" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" form="formCadastroVeiculo" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Visualizar Veículo -->
+<div class="modal fade" id="modalVisualizarVeiculo" tabindex="-1" aria-labelledby="modalVisualizarVeiculoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title me-auto" id="modalVisualizarVeiculoLabel">Detalhes do Veículo</h5>
+        <button type="button" class="btn btn-primary btn-sm" id="btnSalvarEdicao">💾 Salvar alterações</button>
+        <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="detalhesVeiculo" class="row g-3">
+          <!-- Detalhes via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/cadastro_veiculo.js') }}"></script>
+
+<style>
+  .card-veiculo {
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+
+  .card-veiculo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-veiculo:active {
+  transform: scale(0.98);
+}
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+[
+  {
+    "marca": "Volkswagen",
+    "modelo": "Polo",
+    "ano": 2021,
+    "placa": "ABC-1234",
+    "kmAtual": 30000,
+    "oleoKm": 10000,
+    "oleoUltimaKm": 25000,
+    "oleoDias": 365,
+    "oleoUltimaDias": 68,
+    "filtroArKm": 15000,
+    "filtroArUltimaKm": 2000,
+    "filtroArDias": 365,
+    "filtroArUltimaDias": 70,
+    "filtroCombustivelKm": 20000,
+    "filtroCombustivelUltimaKm": 10000,
+    "filtroCombustivelDias": 730,
+    "filtroCombustivelUltimaDias": 46
+  },
+  {
+    "marca": "Citroën",
+    "modelo": "C3",
+    "ano": 2023,
+    "placa": "placa-teste",
+    "kmAtual": 100000,
+    "oleoKm": 10000,
+    "oleoUltimaKm": 5000,
+    "oleoDias": 365,
+    "oleoUltimaDias": 200,
+    "filtroArKm": 15000,
+    "filtroArUltimaKm": 7000,
+    "filtroArDias": 365,
+    "filtroArUltimaDias": 50,
+    "filtroCombustivelKm": 20000,
+    "filtroCombustivelUltimaKm": 1000,
+    "filtroCombustivelDias": 730,
+    "filtroCombustivelUltimaDias": 100
+  }
+]

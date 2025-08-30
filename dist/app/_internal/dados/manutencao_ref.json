@@ -1,0 +1,3628 @@
+{
+  "Chevrolet": {
+    "Onix": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Prisma": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "S10": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Tracker": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Spin": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Fiat": {
+    "Argo": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Cronos": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Toro": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Uno": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Mobi": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Volkswagen": {
+    "Gol": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Polo": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "T-Cross": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Virtus": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Saveiro": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Hyundai": {
+    "HB20": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Creta": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Tucson": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Toyota": {
+    "Corolla": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Etios": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Hilux": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Yaris": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Honda": {
+    "Civic": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "City": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Fit": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "HR-V": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Renault": {
+    "Kwid": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Duster": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Captur": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Sandero": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Logan": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Nissan": {
+    "Kicks": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Versa": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Frontier": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "March": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Jeep": {
+    "Renegade": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Compass": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Commander": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Peugeot": {
+    "208": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "2008": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "3008": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Citroën": {
+    "C3": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "C4 Cactus": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Mitsubishi": {
+    "L200 Triton": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "ASX": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Outlander": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  },
+  "Ford": {
+    "Ka": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "EcoSport": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Ranger": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    },
+    "Fusion": {
+      "2020": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2021": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2022": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2023": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      },
+      "2024": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
+  }
+}
