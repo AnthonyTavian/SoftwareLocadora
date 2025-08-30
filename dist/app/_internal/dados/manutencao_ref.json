@@ -3624,5 +3624,23 @@
         }
       }
     }
+  },
+  "Volvo": {
+    "s60": {
+      "2015": {
+        "Óleo do motor": {
+          "intervalo_km": 10000,
+          "intervalo_dias": 365
+        },
+        "Filtro de ar": {
+          "intervalo_km": 15000,
+          "intervalo_dias": 365
+        },
+        "Filtro de combustível": {
+          "intervalo_km": 20000,
+          "intervalo_dias": 730
+        }
+      }
+    }
   }
 }

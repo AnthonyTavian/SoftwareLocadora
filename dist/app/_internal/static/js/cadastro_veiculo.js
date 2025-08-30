@@ -1,5 +1,58 @@
 let dadosCarros = {};
 
+function calcularPercentualRestante(v) {
+    function calcItem(intervaloKm, ultimaKm, intervaloDias, ultimaDias) {
+        const percKm = ((intervaloKm - (v.kmAtual - ultimaKm)) / intervaloKm) * 100;
+        const percDias = ((intervaloDias - ultimaDias) / intervaloDias) * 100;
+        return Math.min(percKm, percDias);
+    }
+
+    const percOleo = calcItem(v.oleoKm, v.oleoUltimaKm, v.oleoDias, v.oleoUltimaDias);
+    const percFiltroAr = calcItem(v.filtroArKm, v.filtroArUltimaKm, v.filtroArDias, v.filtroArUltimaDias);
+    const percFiltroComb = calcItem(v.filtroCombustivelKm, v.filtroCombustivelUltimaKm, v.filtroCombustivelDias, v.filtroCombustivelUltimaDias);
+
+    return Math.min(percOleo, percFiltroAr, percFiltroComb);
+}
+
+function calcularPercentualPorItem(v) {
+    function calcItem(intervaloKm, ultimaKm, intervaloDias, ultimaDias) {
+        const percKm = ((intervaloKm - (v.kmAtual - ultimaKm)) / intervaloKm) * 100;
+        const percDias = ((intervaloDias - ultimaDias) / intervaloDias) * 100;
+        return Math.min(percKm, percDias);
+    }
+
+    return {
+        oleo: calcItem(v.oleoKm, v.oleoUltimaKm, v.oleoDias, v.oleoUltimaDias),
+        filtroAr: calcItem(v.filtroArKm, v.filtroArUltimaKm, v.filtroArDias, v.filtroArUltimaDias),
+        filtroComb: calcItem(v.filtroCombustivelKm, v.filtroCombustivelUltimaKm, v.filtroCombustivelDias, v.filtroCombustivelUltimaDias)
+    };
+}
+
+function aplicarBordas(percentuais) {
+    function corClasse(p) {
+        if (p <= 10) return "borda-vermelha";
+        if (p <= 50) return "borda-amarela";
+        return "borda-verde";
+    }
+
+    document.querySelectorAll("#detalhesVeiculo h6").forEach(h6 => {
+        const titulo = h6.textContent.trim().toLowerCase();
+        let cor = null;
+
+        if (titulo.includes("óleo")) cor = corClasse(percentuais.oleo);
+        if (titulo.includes("filtro de ar")) cor = corClasse(percentuais.filtroAr);
+        if (titulo.includes("filtro de combustível")) cor = corClasse(percentuais.filtroComb);
+
+        if (cor) {
+            const bloco = h6.parentElement.nextElementSibling;
+            if (bloco) {
+                bloco.classList.remove("borda-verde", "borda-amarela", "borda-vermelha");
+                bloco.classList.add(cor);
+            }
+        }
+    });
+}
+
 // Lista e renderiza veículos cadastrados
 async function carregarVeiculos() {
     try {
@@ -17,26 +70,32 @@ async function carregarVeiculos() {
         }
 
        veiculos.forEach(v => {
-        const col = document.createElement("div");
-        col.classList.add("col"); 
+            const percRestante = calcularPercentualRestante(v);
 
-        const card = document.createElement("div");
-        card.classList.add("card", "h-100", "shadow-sm", "card-veiculo");
-        card.innerHTML = `
-            <div class="card-body">
-                <h5 class="card-title">${v.marca} ${v.modelo} - ${v.ano}</h5>
-                <p class="card-text">${v.placa} - ${v.kmAtual} km</p>
-            </div>
-        `;
+            let corClasse = "card-status-verde";
+            if (percRestante <= 10) corClasse = "card-status-vermelho";
+            else if (percRestante <= 50) corClasse = "card-status-amarelo";
 
-        card.addEventListener("click", () => {
-            abrirModalDetalhes(v.placa);
+            const col = document.createElement("div");
+            col.classList.add("col"); 
+
+            const card = document.createElement("div");
+            card.classList.add("card", "h-100", "shadow-sm", "card-veiculo", corClasse);
+            card.innerHTML = `
+                <div class="card-body">
+                    <h5 class="card-title">${v.marca} ${v.modelo} - ${v.ano}</h5>
+                    <p class="card-text">${v.placa} - ${v.kmAtual} km</p>
+                </div>
+            `;
+
+            card.addEventListener("click", () => {
+                abrirModalDetalhes(v.placa);
+            });
+
+            col.appendChild(card);
+            container.appendChild(col);
         });
-
-        col.appendChild(card);
-        container.appendChild(col);
-    });
-    } catch (error) {
+        } catch (error) {
         console.error("Erro ao carregar veículos", error);
     }
 }
@@ -60,7 +119,7 @@ async function carregarMarcas() {
 // Função para abrir o modal e buscar os dados do veículo pela placa
 async function abrirModalDetalhes(placa) {
     try {
-        // Busca apenas o veículo específico já com a previsão calculada
+        // Busca o veículo específico
         const resp = await fetch(`/veiculos/${placa}`);
         const veiculo = await resp.json();
 
@@ -69,156 +128,64 @@ async function abrirModalDetalhes(placa) {
             return;
         }
 
-        // Monta os campos no modal
+        // Monta o HTML inicial do modal
         const container = document.getElementById("detalhesVeiculo");
-        container.innerHTML = `
- <div class="col-md-4">
-                <label class="form-label">Marca</label>
-                <select id="editMarca" class="form-select" required></select>
-            </div>
-            <div class="col-md-4">
-                <label class="form-label">Modelo</label>
-                <select id="editModelo" class="form-select" required></select>
-            </div>
-            <div class="col-md-4">
-                <label class="form-label">Ano</label>
-                <select id="editAno" class="form-select" required></select>
-            </div>
-
-            <div class="col-md-6">
-                <label class="form-label">Placa</label>
-                <input type="text" id="editPlaca" class="form-control" value="${veiculo.placa || ''}">
-            </div>
-            <div class="col-md-6">
-                <label class="form-label">KM Atual</label>
-                <input type="number" id="editKmAtual" class="form-control" value="${veiculo.kmAtual || ''}">
-            </div>
-
-            <!-- Troca Óleo -->
-            <div class="col-12 mt-3"><h6>Troca Óleo</h6></div>
-            <div class="row g-2 align-items-end">
-                <div class="col-md-2">
-                    <label class="form-label">Intervalo (km)</label>
-                    <input type="number" id="editOleoKm" class="form-control" value="${veiculo.oleoKm || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Última troca (km)</label>
-                    <input type="number" id="editOleoUltimaKm" class="form-control" value="${veiculo.oleoUltimaKm || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Intervalo (dias)</label>
-                    <input type="number" id="editOleoDias" class="form-control" value="${veiculo.oleoDias || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Última troca (dias)</label>
-                    <input type="number" id="editOleoUltimaDias" class="form-control" value="${veiculo.oleoUltimaDias || ''}">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Próxima troca</label>
-                    <div class="form-control-plaintext text-muted">
-                        ${veiculo.proximaTroca?.["Óleo"] || '—'}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Filtro de Ar -->
-            <div class="col-12 mt-3"><h6>Filtro de Ar</h6></div>
-            <div class="row g-2 align-items-end">
-                <div class="col-md-2">
-                    <label class="form-label">Intervalo (km)</label>
-                    <input type="number" id="editFiltroArKm" class="form-control" value="${veiculo.filtroArKm || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Última troca (km)</label>
-                    <input type="number" id="editFiltroArUltimaKm" class="form-control" value="${veiculo.filtroArUltimaKm || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Intervalo (dias)</label>
-                    <input type="number" id="editFiltroArDias" class="form-control" value="${veiculo.filtroArDias || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Última troca (dias)</label>
-                    <input type="number" id="editFiltroArUltimaDias" class="form-control" value="${veiculo.filtroArUltimaDias || ''}">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Próxima troca</label>
-                    <div class="form-control-plaintext text-muted">
-                        ${veiculo.proximaTroca?.["Filtro de Ar"] || '—'}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Filtro de Combustível -->
-            <div class="col-12 mt-3"><h6>Filtro de Combustível</h6></div>
-            <div class="row g-2 align-items-end">
-                <div class="col-md-2">
-                    <label class="form-label">Intervalo (km)</label>
-                    <input type="number" id="editFiltroCombustivelKm" class="form-control" value="${veiculo.filtroCombustivelKm || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Última troca (km)</label>
-                    <input type="number" id="editFiltroCombustivelUltimaKm" class="form-control" value="${veiculo.filtroCombustivelUltimaKm || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Intervalo (dias)</label>
-                    <input type="number" id="editFiltroCombustivelDias" class="form-control" value="${veiculo.filtroCombustivelDias || ''}">
-                </div>
-                <div class="col-md-2">
-                    <label class="form-label">Última troca (dias)</label>
-                    <input type="number" id="editFiltroCombustivelUltimaDias" class="form-control" value="${veiculo.filtroCombustivelUltimaDias || ''}">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Próxima troca</label>
-                    <div class="form-control-plaintext text-muted">
-                        ${veiculo.proximaTroca?.["Filtro de Combustível"] || '—'}
-                    </div>
-                </div>
-            </div>
-        `;
+        container.innerHTML = montarHTMLVeiculo(veiculo);
 
         // Preenche selects
         preencherSelectsEdicao(veiculo);
 
+        const percentuais = calcularPercentualPorItem(veiculo);
+        aplicarBordas(percentuais);
+
         // Evento salvar
         document.getElementById("btnSalvarEdicao").onclick = async () => {
-            const dadosAtualizados = {
-                marca: document.getElementById("editMarca").value,
-                modelo: document.getElementById("editModelo").value,
-                ano: parseInt(document.getElementById("editAno").value),
-                placa: document.getElementById("editPlaca").value,
-                kmAtual: parseInt(document.getElementById("editKmAtual").value),
+            const dadosAtualizados = coletarDadosFormulario();
 
-                oleoKm: parseInt(document.getElementById("editOleoKm").value),
-                oleoUltimaKm: parseInt(document.getElementById("editOleoUltimaKm").value),
-                oleoDias: parseInt(document.getElementById("editOleoDias").value),
-                oleoUltimaDias: parseInt(document.getElementById("editOleoUltimaDias").value),
+            console.log("Enviando atualização:", dadosAtualizados);
 
-                filtroArKm: parseInt(document.getElementById("editFiltroArKm").value),
-                filtroArUltimaKm: parseInt(document.getElementById("editFiltroArUltimaKm").value),
-                filtroArDias: parseInt(document.getElementById("editFiltroArDias").value),
-                filtroArUltimaDias: parseInt(document.getElementById("editFiltroArUltimaDias").value),
+            try {
+                const resp = await fetch(`/veiculos/${dadosAtualizados.placa}`, {
+                    method: "PUT",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(dadosAtualizados)
+                });
 
-                filtroCombustivelKm: parseInt(document.getElementById("editFiltroCombustivelKm").value),
-                filtroCombustivelUltimaKm: parseInt(document.getElementById("editFiltroCombustivelUltimaKm").value),
-                filtroCombustivelDias: parseInt(document.getElementById("editFiltroCombustivelDias").value),
-                filtroCombustivelUltimaDias: parseInt(document.getElementById("editFiltroCombustivelUltimaDias").value)
-            };
+                console.log("Status:", resp.status, "StatusText:", resp.statusText);
 
-            const upd = await fetch(`/veiculos/${dadosAtualizados.placa}`, {
-                method: "PUT",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(dadosAtualizados)
-            });
+                // Busca novamente o veículo atualizado
+                const respAtualizado = await fetch(`/veiculos/${dadosAtualizados.placa}`);
+                const veiculoAtualizado = await respAtualizado.json();
 
-            if (upd.ok) {
-                alert("Veículo atualizado com sucesso!");
-                carregarVeiculos();
-            } else {
-                alert("Erro ao atualizar veículo.");
+                console.log("Recebido atualizado:", veiculoAtualizado);
+
+                // Atualiza o HTML do modal com os dados novos
+                document.getElementById("detalhesVeiculo").innerHTML = montarHTMLVeiculo(veiculoAtualizado);
+                preencherSelectsEdicao(veiculoAtualizado);
+
+                const novosPercentuais = calcularPercentualPorItem(veiculoAtualizado);
+                document.querySelector("#detalhesVeiculo h6:nth-of-type(1)").parentElement.nextElementSibling
+                    .classList.add(corClasse(novosPercentuais.oleo));
+                document.querySelector("#detalhesVeiculo h6:nth-of-type(2)").parentElement.nextElementSibling
+                    .classList.add(corClasse(novosPercentuais.filtroAr));
+                document.querySelector("#detalhesVeiculo h6:nth-of-type(3)").parentElement.nextElementSibling
+                    .classList.add(corClasse(novosPercentuais.filtroComb));
+
+                if (resp.status >= 200 && resp.status < 300) {
+                    alert("Veículo atualizado e previsão recalculada!");
+                } else {
+                    let erroServidor = {};
+                    try { erroServidor = await resp.json(); } catch (e) {}
+                    alert(`Erro ao atualizar veículo: ${erroServidor.erro || resp.statusText}`);
+                }
+
+            } catch (err) {
+                console.error("Erro ao salvar alterações:", err);
+                alert("Erro ao salvar alterações. Veja o console para mais detalhes.");
             }
         };
 
-        // Abre modal
+        // Abre o modal
         new bootstrap.Modal(document.getElementById("modalVisualizarVeiculo")).show();
 
     } catch (err) {
@@ -226,6 +193,266 @@ async function abrirModalDetalhes(placa) {
         alert("Erro ao buscar informações do veículo.");
     }
 }
+
+// Função para montar o HTML do modal (reutiliza seu template)
+function montarHTMLVeiculo(v) {
+    return `
+        <div class="col-md-4">
+            <label class="form-label">Marca</label>
+            <select id="editMarca" class="form-select" required></select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Modelo</label>
+            <select id="editModelo" class="form-select" required></select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Ano</label>
+            <select id="editAno" class="form-select" required></select>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Placa</label>
+            <input type="text" id="editPlaca" class="form-control" value="${v.placa || ''}">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">KM Atual</label>
+            <input type="number" id="editKmAtual" class="form-control" value="${v.kmAtual || ''}">
+        </div>
+
+        <!-- Troca Óleo -->
+        <div class="col-12 mt-3"><h6>Troca Óleo</h6></div>
+        <div class="row g-2 align-items-end">
+            <div class="col-md-2">
+                <label class="form-label">Intervalo (km)</label>
+                <input type="number" id="editOleoKm" class="form-control" value="${v.oleoKm || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Última troca (km)</label>
+                <input type="number" id="editOleoUltimaKm" class="form-control" value="${v.oleoUltimaKm || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Intervalo (dias)</label>
+                <input type="number" id="editOleoDias" class="form-control" value="${v.oleoDias || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Última troca (dias)</label>
+                <input type="number" id="editOleoUltimaDias" class="form-control" value="${v.oleoUltimaDias || ''}">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Próxima troca</label>
+                <div class="form-control-plaintext text-muted">
+                    ${v.proximaTroca?.["Óleo"] || '—'}
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtro de Ar -->
+        <div class="col-12 mt-3"><h6>Filtro de Ar</h6></div>
+        <div class="row g-2 align-items-end">
+            <div class="col-md-2">
+                <label class="form-label">Intervalo (km)</label>
+                <input type="number" id="editFiltroArKm" class="form-control" value="${v.filtroArKm || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Última troca (km)</label>
+                <input type="number" id="editFiltroArUltimaKm" class="form-control" value="${v.filtroArUltimaKm || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Intervalo (dias)</label>
+                <input type="number" id="editFiltroArDias" class="form-control" value="${v.filtroArDias || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Última troca (dias)</label>
+                <input type="number" id="editFiltroArUltimaDias" class="form-control" value="${v.filtroArUltimaDias || ''}">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Próxima troca</label>
+                <div class="form-control-plaintext text-muted">
+                    ${v.proximaTroca?.["Filtro de Ar"] || '—'}
+                </div>
+            </div>
+        </div>
+
+        <!-- Filtro de Combustível -->
+        <div class="col-12 mt-3"><h6>Filtro de Combustível</h6></div>
+        <div class="row g-2 align-items-end">
+            <div class="col-md-2">
+                <label class="form-label">Intervalo (km)</label>
+                <input type="number" id="editFiltroCombustivelKm" class="form-control" value="${v.filtroCombustivelKm || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Última troca (km)</label>
+                <input type="number" id="editFiltroCombustivelUltimaKm" class="form-control" value="${v.filtroCombustivelUltimaKm || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Intervalo (dias)</label>
+                <input type="number" id="editFiltroCombustivelDias" class="form-control" value="${v.filtroCombustivelDias || ''}">
+            </div>
+            <div class="col-md-2">
+                <label class="form-label">Última troca (dias)</label>
+                <input type="number" id="editFiltroCombustivelUltimaDias" class="form-control" value="${v.filtroCombustivelUltimaDias || ''}">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Próxima troca</label>
+                <div class="form-control-plaintext text-muted">
+                    ${v.proximaTroca?.["Filtro de Combustível"] || '—'}
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Função para coletar os dados do formulário
+function coletarDadosFormulario() {
+    return {
+        marca: document.getElementById("editMarca").value,
+        modelo: document.getElementById("editModelo").value,
+        ano: parseInt(document.getElementById("editAno").value),
+        placa: document.getElementById("editPlaca").value,
+        kmAtual: parseInt(document.getElementById("editKmAtual").value),
+
+        oleoKm: parseInt(document.getElementById("editOleoKm").value),
+        oleoUltimaKm: parseInt(document.getElementById("editOleoUltimaKm").value),
+        oleoDias: parseInt(document.getElementById("editOleoDias").value),
+        oleoUltimaDias: parseInt(document.getElementById("editOleoUltimaDias").value),
+
+        filtroArKm: parseInt(document.getElementById("editFiltroArKm").value),
+        filtroArUltimaKm: parseInt(document.getElementById("editFiltroArUltimaKm").value),
+        filtroArDias: parseInt(document.getElementById("editFiltroArDias").value),
+        filtroArUltimaDias: parseInt(document.getElementById("editFiltroArUltimaDias").value),
+
+        filtroCombustivelKm: parseInt(document.getElementById("editFiltroCombustivelKm").value),
+        filtroCombustivelUltimaKm: parseInt(document.getElementById("editFiltroCombustivelUltimaKm").value),
+        filtroCombustivelDias: parseInt(document.getElementById("editFiltroCombustivelDias").value),
+        filtroCombustivelUltimaDias: parseInt(document.getElementById("editFiltroCombustivelUltimaDias").value)
+    };
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Quando clicar no botão "+", abre o modal de nova marca
+    document.getElementById("btnAddMarca").addEventListener("click", () => {
+        document.getElementById("novaMarca").value = "";
+        new bootstrap.Modal(document.getElementById("modalAddMarca")).show();
+    });
+});
+
+document.getElementById("salvarNovaMarca").addEventListener("click", async () => {
+    const marca = document.getElementById("novaMarca").value.trim();
+    if (!marca) {
+        alert("Digite uma marca válida.");
+        return;
+    }
+
+    try {
+        const resp = await fetch("/manutencao_ref/marcas", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ marca })
+        });
+
+        const data = await resp.json();
+
+        if (resp.ok) {
+            const selectMarca = document.getElementById("marca");
+            const option = document.createElement("option");
+            option.value = data.marca;
+            option.textContent = data.marca;
+            selectMarca.appendChild(option);
+            selectMarca.value = data.marca;
+
+            bootstrap.Modal.getInstance(document.getElementById("modalAddMarca")).hide();
+            alert("Marca adicionada com sucesso!");
+        } else {
+            alert(data.erro || "Erro ao adicionar marca.");
+        }
+    } catch (err) {
+        console.error("Erro ao salvar marca:", err);
+        alert("Erro ao salvar marca. Veja o console.");
+    }
+});
+
+document.getElementById("btnAddModelo").addEventListener("click", () => {
+    document.getElementById("novoModelo").value = "";
+    new bootstrap.Modal(document.getElementById("modalAddModelo")).show();
+});
+
+document.getElementById("salvarNovoModelo").addEventListener("click", async () => {
+    const marca = document.getElementById("marca").value;
+    const modelo = document.getElementById("novoModelo").value.trim();
+
+    if (!marca) {
+        alert("Selecione uma marca antes de adicionar um modelo.");
+        return;
+    }
+    if (!modelo) {
+        alert("Digite um modelo válido.");
+        return;
+    }
+
+    const resp = await fetch("/manutencao_ref/modelos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ marca, modelo })
+    });
+
+    const data = await resp.json();
+
+    if (resp.ok) {
+        const selectModelo = document.getElementById("modelo");
+        const option = document.createElement("option");
+        option.value = data.modelo;
+        option.textContent = data.modelo;
+        selectModelo.appendChild(option);
+        selectModelo.value = data.modelo;
+
+        bootstrap.Modal.getInstance(document.getElementById("modalAddModelo")).hide();
+        alert("Modelo adicionado com sucesso!");
+    } else {
+        alert(data.erro || "Erro ao adicionar modelo.");
+    }
+});
+
+document.getElementById("btnAddAno").addEventListener("click", () => {
+    document.getElementById("novoAno").value = "";
+    new bootstrap.Modal(document.getElementById("modalAddAno")).show();
+});
+
+document.getElementById("salvarNovoAno").addEventListener("click", async () => {
+    const marca = document.getElementById("marca").value;
+    const modelo = document.getElementById("modelo").value;
+    const ano = document.getElementById("novoAno").value.trim();
+
+    if (!marca || !modelo) {
+        alert("Selecione marca e modelo antes de adicionar um ano.");
+        return;
+    }
+    if (!ano) {
+        alert("Digite um ano válido.");
+        return;
+    }
+
+    const resp = await fetch("/manutencao_ref/anos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ marca, modelo, ano })
+    });
+
+    const data = await resp.json();
+
+    if (resp.ok) {
+        const selectAno = document.getElementById("ano");
+        const option = document.createElement("option");
+        option.value = data.ano;
+        option.textContent = data.ano;
+        selectAno.appendChild(option);
+        selectAno.value = data.ano;
+
+        bootstrap.Modal.getInstance(document.getElementById("modalAddAno")).hide();
+        alert("Ano adicionado com sucesso!");
+    } else {
+        alert(data.erro || "Erro ao adicionar ano.");
+    }
+});
 
 async function preencherSelectsEdicao(veiculo) {
     if (Object.keys(dadosCarros).length === 0) {
@@ -298,6 +525,8 @@ async function preencherSelectsEdicao(veiculo) {
         }
     });
 }
+
+
 
 
 // Eventos dos selects

@@ -32,16 +32,29 @@
       <div class="modal-body">
         <form id="formCadastroVeiculo" class="row g-3">
           <div class="col-md-4">
-            <label for="marca" class="form-label">Marca</label>
-            <select class="form-select" id="marca" required></select>
+              <label class="form-label">Marca</label>
+              <div class="input-group">
+                  <select id="marca" class="form-select" required>
+                      <!-- opções preenchidas pelo sistema -->
+                  </select>
+                  <button class="btn btn-outline-primary" type="button" id="btnAddMarca" title="Adicionar nova marca">
+                      +
+                  </button>
+              </div>
           </div>
           <div class="col-md-4">
-            <label for="modelo" class="form-label">Modelo</label>
-            <select class="form-select" id="modelo" required></select>
+              <label class="form-label">Modelo</label>
+              <div class="input-group">
+                  <select id="modelo" class="form-select" required></select>
+                  <button class="btn btn-outline-primary" type="button" id="btnAddModelo">+</button>
+              </div>
           </div>
           <div class="col-md-4">
-            <label for="ano" class="form-label">Ano</label>
-            <select class="form-select" id="ano" required></select>
+              <label class="form-label">Ano</label>
+              <div class="input-group">
+                  <select id="ano" class="form-select" required></select>
+                  <button class="btn btn-outline-primary" type="button" id="btnAddAno">+</button>
+              </div>
           </div>
           <div class="col-md-4">
             <label for="placa" class="form-label">Placa</label>
@@ -131,6 +144,59 @@
   </div>
 </div>
 
+<div class="modal fade" id="modalAddMarca" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Adicionar nova marca</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="novaMarca" class="form-control" placeholder="Digite a marca">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="salvarNovaMarca">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalAddModelo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Adicionar novo modelo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="novoModelo" class="form-control" placeholder="Digite o modelo">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="salvarNovoModelo">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalAddAno" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Adicionar novo ano</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <input type="number" id="novoAno" class="form-control" placeholder="Digite o ano">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="salvarNovoAno">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -154,6 +220,41 @@
 
   .card-veiculo:active {
   transform: scale(0.98);
+}
+
+.card-status-verde {
+    background-color: #28a745; 
+}
+
+.card-status-amarelo {
+    background-color: #ffc107; 
+}
+
+.card-status-vermelho {
+    background-color: #dc3545; 
+}
+
+.card-veiculo .card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.borda-verde {
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.borda-amarela {
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.borda-vermelha {
+    border: 2px solid #dc3545;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 </style>
