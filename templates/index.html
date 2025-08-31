@@ -16,6 +16,12 @@
         </button>
     </div>
 
+    <div class="mb-3 text-end">
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalFiltros">
+        🔍 Filtros
+      </button>
+    </div>
+
     <div id="listaVeiculos" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-1">
         <!-- Cards via JS -->
     </div>
@@ -59,6 +65,10 @@
           <div class="col-md-4">
             <label for="placa" class="form-label">Placa</label>
             <input type="text" class="form-control" id="placa" required>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Cor</label>
+            <input type="text" id="cor" class="form-control">
           </div>
           <div class="col-md-4">
             <label for="kmAtual" class="form-label">KM Atual</label>
@@ -132,7 +142,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title me-auto" id="modalVisualizarVeiculoLabel">Detalhes do Veículo</h5>
-        <button type="button" class="btn btn-primary btn-sm" id="btnSalvarEdicao">💾 Salvar alterações</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm me-2" id="btnAlterarStatus">🚦 Disponível</button>
+        <button type="button" class="btn btn-primary btn-sm me-2" id="btnSalvarEdicao">💾 Salvar alterações</button>
+        <button type="button" class="btn btn-danger me-2 btn-sm" id="btnExcluirVeiculo">🗑 Excluir</button>
         <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Fechar"></button>
       </div>
       <div class="modal-body">
@@ -193,6 +205,62 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         <button type="button" class="btn btn-primary" id="salvarNovoAno">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalFiltros" tabindex="-1" aria-labelledby="modalFiltrosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalFiltrosLabel">Filtrar Veículos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="form-label">Marca</label>
+            <select id="filtroMarca" class="form-select">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Modelo</label>
+            <select id="filtroModelo" class="form-select" disabled>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Ano</label>
+            <select id="filtroAno" class="form-select" disabled>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Cor</label>
+            <select id="filtroCor" class="form-select">
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Placa</label>
+            <input type="text" id="filtroPlaca" class="form-control" placeholder="Digite a placa...">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Status</label>
+            <select id="filtroStatus" class="form-select">
+              <option value=""></option>
+              <option value="disponivel">Disponível</option>
+              <option value="indisponivel">Indisponível</option>
+              <option value="alugado">Alugado</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btnLimparFiltros">Limpar</button>
+        <button type="button" class="btn btn-primary" id="btnAplicarFiltros" data-bs-dismiss="modal">Aplicar</button>
       </div>
     </div>
   </div>

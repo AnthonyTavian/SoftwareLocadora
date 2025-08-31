@@ -10,31 +10,47 @@
     "oleoDias": 365,
     "oleoUltimaDias": 68,
     "filtroArKm": 15000,
-    "filtroArUltimaKm": 2000,
+    "filtroArUltimaKm": 30000,
     "filtroArDias": 365,
-    "filtroArUltimaDias": 70,
+    "filtroArUltimaDias": 0,
     "filtroCombustivelKm": 20000,
     "filtroCombustivelUltimaKm": 10000,
     "filtroCombustivelDias": 730,
-    "filtroCombustivelUltimaDias": 46
+    "filtroCombustivelUltimaDias": 46,
+    "status": "disponivel",
+    "proximaTroca": {
+      "Filtro de Ar": "em 365 dias",
+      "Filtro de Combustível": "em 0 km",
+      "Óleo": "em 297 dias"
+    },
+    "ultimaAtualizacaoDias": "2025-08-30",
+    "cor": "Preto"
   },
   {
-    "marca": "Citroën",
-    "modelo": "C3",
-    "ano": 2023,
-    "placa": "placa-teste",
+    "marca": "Mitsubishi",
+    "modelo": "Outlander",
+    "ano": 2021,
+    "placa": "HKJ-2274",
+    "cor": "Branco",
     "kmAtual": 100000,
     "oleoKm": 10000,
-    "oleoUltimaKm": 5000,
+    "oleoUltimaKm": 95000,
     "oleoDias": 365,
-    "oleoUltimaDias": 200,
+    "oleoUltimaDias": 90,
     "filtroArKm": 15000,
-    "filtroArUltimaKm": 7000,
+    "filtroArUltimaKm": 95000,
     "filtroArDias": 365,
-    "filtroArUltimaDias": 50,
+    "filtroArUltimaDias": 90,
     "filtroCombustivelKm": 20000,
-    "filtroCombustivelUltimaKm": 1000,
+    "filtroCombustivelUltimaKm": 95000,
     "filtroCombustivelDias": 730,
-    "filtroCombustivelUltimaDias": 100
+    "filtroCombustivelUltimaDias": 90,
+    "status": "indisponivel",
+    "ultimaAtualizacaoDias": "2025-08-30",
+    "proximaTroca": {
+      "Filtro de Ar": "em 275 dias",
+      "Filtro de Combustível": "em 640 dias",
+      "Óleo": "em 275 dias"
+    }
   }
 ]

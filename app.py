@@ -4,6 +4,7 @@ from pathlib import Path
 import os, sys
 import threading
 import webview
+from datetime import date, datetime
 
 def resource_path(rel_path):
     """Retorna o caminho absoluto para rodar no Python normal e no executável"""
@@ -18,6 +19,29 @@ VEICULOS_PATH = Path(resource_path("dados/veiculos_cadastrados.json"))
 
 if not VEICULOS_PATH.exists():
     VEICULOS_PATH.write_text("[]", encoding="utf-8")
+
+def atualizar_ultimas_trocas_dias(veiculos):
+    hoje = date.today()
+    alterou = False
+
+    for v in veiculos:
+        # Se não tiver data registrada, cria agora
+        if "ultimaAtualizacaoDias" not in v:
+            v["ultimaAtualizacaoDias"] = hoje.isoformat()
+            alterou = True
+            continue
+
+        ultima_data = datetime.strptime(v["ultimaAtualizacaoDias"], "%Y-%m-%d").date()
+        dias_passados = (hoje - ultima_data).days
+
+        if dias_passados > 0:
+            v["oleoUltimaDias"] += dias_passados
+            v["filtroArUltimaDias"] += dias_passados
+            v["filtroCombustivelUltimaDias"] += dias_passados
+            v["ultimaAtualizacaoDias"] = hoje.isoformat()
+            alterou = True
+
+    return alterou
 
 @app.route("/")
 def index():
@@ -67,12 +91,19 @@ def dados_carros():
 def listar_veiculos():
     with open(VEICULOS_PATH, "r", encoding="utf-8") as f:
         veiculos = json.load(f)
+    if atualizar_ultimas_trocas_dias(veiculos):
+        with open(VEICULOS_PATH, "w", encoding="utf-8") as f:
+            json.dump(veiculos, f, ensure_ascii=False, indent=2)
+    
     return jsonify(veiculos)
 
 @app.route("/veiculos", methods=["POST"])
 def adicionar_veiculo():
     novo_veiculo = request.json
-    campos_obrigatorios = {"marca", "modelo", "ano"}
+    campos_obrigatorios = {"marca", "modelo", "ano", "placa", "cor"}
+
+    if "status" not in novo_veiculo or not novo_veiculo["status"]:
+        novo_veiculo["status"] = "disponivel"
 
     if not novo_veiculo or not campos_obrigatorios.issubset(novo_veiculo):
         return jsonify({"erro": "JSON inválido ou incompleto"}), 400
@@ -83,12 +114,15 @@ def adicionar_veiculo():
     with open(VEICULOS_PATH, "r", encoding="utf-8") as f:
         veiculos = json.load(f)
 
+    novo_veiculo["ultimaAtualizacaoDias"] = date.today().isoformat()
+
     veiculos.append(novo_veiculo)
 
     with open(VEICULOS_PATH, "w", encoding="utf-8") as f:
         json.dump(veiculos, f, ensure_ascii=False, indent=2)
 
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "ok"}), 201
+
 
 @app.route("/veiculos_cadastrados")
 def veiculos_cadastrados():
@@ -109,8 +143,16 @@ def get_veiculo_por_placa(placa):
     with open(VEICULOS_PATH, "r", encoding="utf-8") as f:
         veiculos = json.load(f)
 
+    if atualizar_ultimas_trocas_dias(veiculos):
+        with open(VEICULOS_PATH, "w", encoding="utf-8") as f:
+            json.dump(veiculos, f, ensure_ascii=False, indent=2)
+    
     for v in veiculos:
         if v["placa"].upper() == placa.upper():
+            # Garante status padrão
+            if "status" not in v or not v["status"]:
+                v["status"] = "disponivel"
+
             v["proximaTroca"] = {
                 "Óleo": calcular_proxima_troca(
                     v["kmAtual"], v["oleoKm"], v["oleoUltimaKm"],
@@ -129,6 +171,7 @@ def get_veiculo_por_placa(placa):
 
     return jsonify({"erro": "Veículo não encontrado"}), 404
 
+
 @app.route("/veiculos/<placa>", methods=["PUT"])
 def atualizar_veiculo(placa):
     dados_atualizados = request.json
@@ -138,12 +181,35 @@ def atualizar_veiculo(placa):
 
     for idx, v in enumerate(veiculos):
         if v["placa"].upper() == placa.upper():
-            veiculos[idx] = dados_atualizados
+            # Atualiza apenas os campos enviados
+            for chave, valor in dados_atualizados.items():
+                v[chave] = valor
+
+            veiculos[idx] = v
+
             with open(VEICULOS_PATH, "w", encoding="utf-8") as fw:
                 json.dump(veiculos, fw, ensure_ascii=False, indent=2)
+
             return jsonify({"status": "ok"}), 200
 
     return jsonify({"erro": "Veículo não encontrado"}), 404
+
+
+@app.route("/veiculos/<placa>", methods=["DELETE"])
+def excluir_veiculo(placa):
+    with open(VEICULOS_PATH, "r", encoding="utf-8") as f:
+        veiculos = json.load(f)
+
+    novos_veiculos = [v for v in veiculos if v["placa"].upper() != placa.upper()]
+
+    if len(novos_veiculos) == len(veiculos):
+        return jsonify({"erro": "Veículo não encontrado"}), 404
+
+    with open(VEICULOS_PATH, "w", encoding="utf-8") as f:
+        json.dump(novos_veiculos, f, ensure_ascii=False, indent=2)
+
+    return jsonify({"status": "ok"}), 200
+
 
 # --- Adicionar nova marca ---
 @app.route("/manutencao_ref/marcas", methods=["POST"])
